@@ -1,0 +1,138 @@
+HTML5 e CSS3 I: Suas primeiras páginas da Web
+
+01 - Introdução ao HTML
+
+inserindo tags(comandos para o HTML).
+Editando um arquivo texto com conteudo.
+
+
+02 - Começando o site
+
+<!doctype html>
+<html>
+    <head>
+        <title>Biografia - João da Silva</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="favicon.png">
+    </head>
+    <body>
+        <h1> Sobre mim</h1>
+        <p>Moro em São Paulo mas atendo clientes do mundo todo. Sou conhecido por fazer produtos de qualidade, durabilidade e que agregam valor para meus clientes.
+        <p>Trabalho usando a web como plataforma, ou seja, respiro HTML5, CSS3 e JavaScript (ou melhor: ECMASCript). Crio sites para todos, seguindo as principais diretivas de acessibilidade, responsividade e web semântica, sem descuidar da qualidade de código.</p>
+        <h2>Como trabalho</h2>
+        <p>Satisfazer meus clientes é prioridade. Para isso, garanto um processo de desenvolvimento altamente interativo, baseado em feedback contínuo. Não trabalho com escopo fechado: o cliente é que decide quando o produto está pronto.</p>
+        <p>Também não trabalho com prazos fechados: qualidade é importante demais para ser sacrificada.</p>
+        <h2>Experiência</h2>
+        <p>Já desenvolvi projetos para grandes empresas como BMW, UOL e IBM. Neles, o foco principal era entregar uma experiência imersiva e impactante para o usuário final sem descuidar do desempenho e da acessibilidade da página.</p>
+        <p>Também já fui contratado para transformar grandes portais, como Terra e G1, em páginas responsivas. Fui responsável por renovar o layout, reorganizar o conteúdo e re-escrever o código de forma mais reaproveitável.</p>
+        <h2>Comunidade</h2>
+        <p>Procuro repassar meu conhecimento para a comunidade. Para isso, já dei diversas palestras e mantenho um blog.</p>
+    </body>
+</html>
+
+
+03 - Realce de texto
+<em></em>
+Itálico.
+
+<strong></strong>
+Negrito.
+
+04 - O que é o HTML?
+Que tipo de linguagem é o HTML? Ou, em outras palavras, qual o propósito da linguagem HTML?
+Linguagem de marcação, ou seja, serve para indicar o que cada trecho de um documento representa
+A linguagem HTML serve para marcar conteúdo, ou seja, especificar o que cada letra, palavra e frase significa. Usamos ela para criar páginas pois, assim, o navegador e outras ferramentas que trabalham na Internet conseguem analisar e processar nosso conteúdo, apresentando-o de forma adequada para os usuários.
+
+05 - Estrutura básica da página
+Qual a estrutura básica de uma página HTML?
+DOCTYPE e tag html com tags head e body dentro, nessa ordem
+Muito bem ! Toda página HTML deve seguir essa estrutura:
+<!DOCTYPE html>
+<html>
+    <head>
+        tags com informações para o navegador
+    </head>
+    <body>
+        conteúdo para o usuário
+    </body>
+</html>
+
+06 - Função do DOCTYPE
+Indicar que estamos usando a linguagem HTML e qual versão da linguagem estamos usando
+A instrução DOCTYPE serve para indicar qual linguagem estamos usando no nosso documento e em qual versão. Por isso é essencial para que o computador processe corretamente nosso arquivo.
+Atualmente, usamos a instrução <!DOCTYPE html> para indicar que usamos a última versão do HTML. Antigamente, era necessário usar <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">, por exemplo, para indicar que estávamos usando a versão 4 do HTML na sua variante estrita.
+
+07 - Codificação da página
+UTF-8, por ser uma codificação abrangente e bem suportada
+A codificação UTF-8 abrange praticamente todos os sistemas de escritas usadas pelo mundo todo. Além disso, todos os computadores vêm com suporte a essa codificação. Assim, se queremos que nossas páginas sejam acessíveis por todos, a codificação UTF-8 é a melhor opção.
+
+08 - Diferença entre h1 e title
+Qual a diferença entre a tag <h1> e a tag <title>? Qual o propósito de cada uma?
+A tag <title> serve para passar para o navegador qual o título da aba/janelaem que a página será exibida. Já a tag <h1> serve para mostrar para o usuário qual o título principal do conteúdo da página.
+
+09 - Página do blog
+Feito blog do joõa da silva.
+<!DOCTYPE html>
+<html lang="br">
+    <head>
+        <title>Blog - João da Silva</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="favicon.png">
+    </head>
+    <body>
+        <h1>Blog</h1>
+        <h2>O essencial de design responsivo</h2>
+        <p>Design responsivo tem ganho cada vez mais atenção como técnica de desenvolvimento de páginas web para dispositivos móveis. Mas como começar?</p>
+        <h2>Por que fazer páginas acessíveis?</h2>
+        <p>Tem se falado cada vez sobre acessibilidade na web. Há diversas técnicas e diretivas a serem seguidas, inclusive da própria W3C. Mas vale a pena investir nisso?</p>
+        <h2>JavaScript não obstrusivo</h2>
+        <p>JavaScript é uma linguagem essencial hoje em dia para criar páginas ricas, interativas e dinâmicas. Porém, há alguns cuidados que devem ser tomados ao colocarmos código JavaScript em nossas páginas.</p>
+    </body>
+</html>
+
+10 - Arquivos do projeto atual
+Baixar arquivo atual
+
+Enviado ao GIT
+
+
+#Tags:
+<!doctype html>
+versão do HTML para execução do navegador.
+
+<html></html>
+agrupa código do html.
+
+<head></head>
+Informações da aba da página, pode ser inserido <title> <link> imagens, codificação.
+
+<title></title>
+mostra título na aba da página.
+
+<meta charset="UTF-8">
+codificação utilizada pela página
+
+<link rel="icon" href="favicon.png">
+importa uma imagem para a pagina.
+
+<body></body>
+oque será mostrado para o usuário.
+
+<hx></hx>
+Título.
+
+<em></em>
+Itálico.
+
+<p></p>
+Paragrafo.
+
+<strong></strong>
+Negrito.
+
+
+
+
+
+
+    
