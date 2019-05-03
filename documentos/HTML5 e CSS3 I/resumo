@@ -1,138 +1,114 @@
-HTML5 e CSS3 I: Suas primeiras páginas da Web
+02 - Introdução a CSS
 
-01 - Introdução ao HTML
+01 - Começando com CSS
 
-inserindo tags(comandos para o HTML).
-Editando um arquivo texto com conteudo.
-
-
-02 - Começando o site
-
-<!doctype html>
-<html>
-    <head>
-        <title>Biografia - João da Silva</title>
-        <meta charset="UTF-8">
-        <link rel="icon" href="favicon.png">
-    </head>
-    <body>
-        <h1> Sobre mim</h1>
-        <p>Moro em São Paulo mas atendo clientes do mundo todo. Sou conhecido por fazer produtos de qualidade, durabilidade e que agregam valor para meus clientes.
-        <p>Trabalho usando a web como plataforma, ou seja, respiro HTML5, CSS3 e JavaScript (ou melhor: ECMASCript). Crio sites para todos, seguindo as principais diretivas de acessibilidade, responsividade e web semântica, sem descuidar da qualidade de código.</p>
-        <h2>Como trabalho</h2>
-        <p>Satisfazer meus clientes é prioridade. Para isso, garanto um processo de desenvolvimento altamente interativo, baseado em feedback contínuo. Não trabalho com escopo fechado: o cliente é que decide quando o produto está pronto.</p>
-        <p>Também não trabalho com prazos fechados: qualidade é importante demais para ser sacrificada.</p>
-        <h2>Experiência</h2>
-        <p>Já desenvolvi projetos para grandes empresas como BMW, UOL e IBM. Neles, o foco principal era entregar uma experiência imersiva e impactante para o usuário final sem descuidar do desempenho e da acessibilidade da página.</p>
-        <p>Também já fui contratado para transformar grandes portais, como Terra e G1, em páginas responsivas. Fui responsável por renovar o layout, reorganizar o conteúdo e re-escrever o código de forma mais reaproveitável.</p>
-        <h2>Comunidade</h2>
-        <p>Procuro repassar meu conhecimento para a comunidade. Para isso, já dei diversas palestras e mantenho um blog.</p>
-    </body>
-</html>
-
-
-03 - Realce de texto
-<em></em>
-Itálico.
-
-<strong></strong>
-Negrito.
-
-04 - O que é o HTML?
-Que tipo de linguagem é o HTML? Ou, em outras palavras, qual o propósito da linguagem HTML?
-Linguagem de marcação, ou seja, serve para indicar o que cada trecho de um documento representa
-A linguagem HTML serve para marcar conteúdo, ou seja, especificar o que cada letra, palavra e frase significa. Usamos ela para criar páginas pois, assim, o navegador e outras ferramentas que trabalham na Internet conseguem analisar e processar nosso conteúdo, apresentando-o de forma adequada para os usuários.
-
-05 - Estrutura básica da página
-Qual a estrutura básica de uma página HTML?
-DOCTYPE e tag html com tags head e body dentro, nessa ordem
-Muito bem ! Toda página HTML deve seguir essa estrutura:
-<!DOCTYPE html>
-<html>
-    <head>
-        tags com informações para o navegador
-    </head>
-    <body>
-        conteúdo para o usuário
-    </body>
-</html>
-
-06 - Função do DOCTYPE
-Indicar que estamos usando a linguagem HTML e qual versão da linguagem estamos usando
-A instrução DOCTYPE serve para indicar qual linguagem estamos usando no nosso documento e em qual versão. Por isso é essencial para que o computador processe corretamente nosso arquivo.
-Atualmente, usamos a instrução <!DOCTYPE html> para indicar que usamos a última versão do HTML. Antigamente, era necessário usar <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">, por exemplo, para indicar que estávamos usando a versão 4 do HTML na sua variante estrita.
-
-07 - Codificação da página
-UTF-8, por ser uma codificação abrangente e bem suportada
-A codificação UTF-8 abrange praticamente todos os sistemas de escritas usadas pelo mundo todo. Além disso, todos os computadores vêm com suporte a essa codificação. Assim, se queremos que nossas páginas sejam acessíveis por todos, a codificação UTF-8 é a melhor opção.
-
-08 - Diferença entre h1 e title
-Qual a diferença entre a tag <h1> e a tag <title>? Qual o propósito de cada uma?
-A tag <title> serve para passar para o navegador qual o título da aba/janelaem que a página será exibida. Já a tag <h1> serve para mostrar para o usuário qual o título principal do conteúdo da página.
-
-09 - Página do blog
-Feito blog do joõa da silva.
-<!DOCTYPE html>
-<html lang="br">
+Da o estilo da página, pode ser aplicado os camandos em cada componente.
+<h2 style="font-size: 16px;">Como trabalho</h2>
+ou podemos aplicar para todos os componentes da página utilizando seletores dessa forma:
     <head>
         <title>Blog - João da Silva</title>
         <meta charset="UTF-8">
         <link rel="icon" href="favicon.png">
+        <style>
+            h2 {
+                font-size: 16px;
+            }
+        </style>
     </head>
-    <body>
-        <h1>Blog</h1>
-        <h2>O essencial de design responsivo</h2>
-        <p>Design responsivo tem ganho cada vez mais atenção como técnica de desenvolvimento de páginas web para dispositivos móveis. Mas como começar?</p>
-        <h2>Por que fazer páginas acessíveis?</h2>
-        <p>Tem se falado cada vez sobre acessibilidade na web. Há diversas técnicas e diretivas a serem seguidas, inclusive da própria W3C. Mas vale a pena investir nisso?</p>
-        <h2>JavaScript não obstrusivo</h2>
-        <p>JavaScript é uma linguagem essencial hoje em dia para criar páginas ricas, interativas e dinâmicas. Porém, há alguns cuidados que devem ser tomados ao colocarmos código JavaScript em nossas páginas.</p>
-    </body>
-</html>
-
-10 - Arquivos do projeto atual
-Baixar arquivo atual
-
-Enviado ao GIT
+Também pode se aplicado CSS, estilo a página, para todas as páginas, para isso, deve separar o código de estilo a página em um outro arquivo, com a estensão .css
+    h2 {
+        font-size: 16px;
+    }
 
 
-#Tags:
-<!doctype html>
-versão do HTML para execução do navegador.
+02 - CSS na página
 
-<html></html>
-agrupa código do html.
+Aplicando css por meio de um arquivo a parte com o tipo de fonte como opcional, no font-family.
+body{
+    font-family: "Times New Roman", serif;
+    background-color: #F2FFFC;
+}
 
-<head></head>
-Informações da aba da página, pode ser inserido <title> <link> imagens, codificação.
+h1, h2 {
+    font-family: "Arial", sans-serif;
+}
 
-<title></title>
-mostra título na aba da página.
+h1 {
+    text-align: center;
+    background-color: #851944;
+    color: #FFF;
+}
 
-<meta charset="UTF-8">
-codificação utilizada pela página
+p {
+    text-align: justify;
+}
 
-<link rel="icon" href="favicon.png">
-importa uma imagem para a pagina.
+03 - CSS no blog
+Importar para outro arquivo o css
+<link rel="stylesheet" href="site.css">
 
-<body></body>
-oque será mostrado para o usuário.
+04 - Tamanho de fonte padrão
 
-<hx></hx>
-Título.
+O que acontece com o texto quando não colocamos uma fonte e um tamanho para ele?
+O texto é exibido usando a fonte e o tamanho padrões do navegador, que podem ser modificados pelo usuário
+Quando não há nenhum estilo definido para o texto de uma página, esse texto é exibido seguindo os padrões definidos nas opções do navegador. O usuário do navegador tem o poder de modificar esse padrão nas opções do navegador para, por exemplo, usar uma fonte maior ou uma fonte que ele ache mais bonita.
 
-<em></em>
-Itálico.
+05 - Sintaxe de cores
+O que significa a expressão #35AF18?
+É uma cor especificada pela mistura de vermelho, verde e azul, nessa ordem. Então é uma cor esverdeada.
+A expressão representa uma cor usando a sintaxe hexadecimal do CSS. Nessa sintaxe, especificamos uma cor pela mistura das cores primárias vermelho, verde e azul, nessa ordem. Assim, os dois primeiros caracteres correspondem à quantidade de vermelho, os dois seguintes à quantidade de verde e os dois últimos à quantidade de azul.
+Cada dois caracteres representam um número de 0 a 255 na notação hexadecimal:
+A = 10
+B = 11
+C = 12
+D = 13
+E = 14
+F = 15
+10 = 16
+...
+1A = 26
+1B = 27
+...
+20 = 32
 
-<p></p>
-Paragrafo.
+06 - Declaração de fonte
 
-<strong></strong>
-Negrito.
+Como deve ser a declaração para usar a fonte Merriweather (que é uma fonte serifada)? Lembre-se: a fonte pode não estar disponível ou pode não ser carregada, ou seja, deve-se ter uma alternativa que seja do tipo de fonte que deseja-se usar.
+font-family: "Merriweather", serif;
+A resposta correta é:
+font-family: "Merriweather", serif;
+Toda declaração font-family pode ter, além do nome da fonte que se deseja usar, uma alternativa que seja o tipo de fonte que se deseja usar. Assim, se o navegador não encontrar a fonte desejada, pode recorrer a uma fonte parecida.
+Também seria válido especificar mais de uma alternativa como, por exemplo:
+font-family: "Merriweather", "Times New Roman", serif;
+Mas sempre com o tipo de fonte como última opção.
+
+
+
+07 - Aumentar a fonte da página
+
+Agora, aumente o tamanho da fonte na página toda. Qual a melhor alternativa para tal tarefa?
+Atenção: faça essa alteração no arquivo site.css
+Colocar "font-size: 120%" no body
+Para aumentar a fonte da página toda, precisamos mudar o font-size no body. Podemos tentar, por exemplo:
+body {
+  font-size: 20px;
+}
+O problema é que, se a fonte padrão do usuário tiver tamanho maior ou igual a 20 pixels, estaremos mantendo ou reduzindo o tamanho da fonte padrão!
+Para garantir que estamos aumentando a fonte, precisamos usar a fonte padrão como base para nossos ajustes. No caso do tamanho da fonte, precisamos usar a medida de porcentagem para definir seu valor. Isso porque, quando usamos porcentagem na propriedade font-size, ele usa como base para calcular a porcentagem o valor definido anteriormente. Então a melhor solução seria:
+body {
+  font-size: 120%;
+}
+Isso aumenta em 20% o tamanho original da fonte.
+
+
+
+09 - Arquivos do projeto atual
+
+enviado para o github
 
 
 
 
 
 
-    
+
